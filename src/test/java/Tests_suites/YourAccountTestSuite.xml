@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="YourAccountTestSuite" verbose="1">
+
+    <test name="Your_Account_Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="csvFilePath" value="src/main/resources/TestData/yourAccountTest.csv"/>
+        <classes>
+            <class name="com.amazon.tests.youraccount.YourAccountTests"/>
+        </classes>
+    </test>
+</suite>

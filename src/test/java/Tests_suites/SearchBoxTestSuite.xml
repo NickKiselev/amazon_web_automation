@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SearchBoxTestSuite" verbose="1">
+
+    <!--<test name="Positive_Search_Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.amazon.tests.searchbox.PositiveSearchBoxTests"/>
+        </classes>
+    </test>-->
+
+   <test name="Negative_Search_Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.amazon.tests.searchbox.NegativeSearchBoxTests"/>
+        </classes>
+    </test>
+</suite>

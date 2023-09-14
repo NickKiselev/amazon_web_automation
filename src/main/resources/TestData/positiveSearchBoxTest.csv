@@ -1,0 +1,4 @@
+query,key_word_1,key_word_2
+"macbook","apple","macbook"
+"iphone 12 mini","iphone","12 mini"
+"iphone 12*","iphone","12 mini"
