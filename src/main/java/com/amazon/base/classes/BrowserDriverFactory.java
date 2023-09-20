@@ -14,20 +14,16 @@ public class BrowserDriverFactory {
         if(driver == null){
             switch (browser) {
                 case "chrome" -> {
-                    driver = new ChromeDriver();
-                    return driver;
+                    return driver = new ChromeDriver();
                 }
                 case "safari" -> {
-                    driver = new SafariDriver();
-                    return driver;
+                    return driver = new SafariDriver();
                 }
                 case "edge" -> {
-                    driver = new EdgeDriver();
-                    return driver;
+                    return driver = new EdgeDriver();
                 }
                 case "firefox" -> {
-                    driver = new FirefoxDriver();
-                    return driver;
+                    return driver = new FirefoxDriver();
                 }
             }
         }
