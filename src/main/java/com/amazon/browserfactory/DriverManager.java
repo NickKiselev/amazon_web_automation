@@ -3,7 +3,7 @@ package com.amazon.browserfactory;
 import org.openqa.selenium.WebDriver;
 
 public abstract class DriverManager {
-    protected WebDriver driver;
+    protected static WebDriver driver;
     protected abstract void createDriver();
 
     public WebDriver getDriver(){

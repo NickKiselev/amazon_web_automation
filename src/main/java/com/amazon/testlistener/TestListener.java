@@ -31,7 +31,6 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        new ScreenshotMaker().makeScreenshot();
     }
 
     @Override
