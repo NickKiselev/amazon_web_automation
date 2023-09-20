@@ -2,12 +2,12 @@
 
 <suite name="SearchBoxTestSuite" verbose="1">
 
-    <!--<test name="Positive_Search_Test">
+    <test name="Positive_Search_Test">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.amazon.tests.searchbox.PositiveSearchBoxTests"/>
         </classes>
-    </test>-->
+    </test>
 
    <test name="Negative_Search_Test">
         <parameter name="browser" value="chrome"/>

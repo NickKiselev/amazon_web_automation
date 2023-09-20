@@ -6,7 +6,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestListener extends ScreenshotMaker implements ITestListener {
+public class TestListener implements ITestListener {
     private String testMethodName;
     private String testName;
     private Logger logger;
@@ -27,12 +27,11 @@ public class TestListener extends ScreenshotMaker implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         logger.info("Test " + testMethodName + " passed");
-        makeScreenshot();
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        makeScreenshot();
+        new ScreenshotMaker().makeScreenshot();
     }
 
     @Override

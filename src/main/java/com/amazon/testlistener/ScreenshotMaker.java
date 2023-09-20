@@ -1,7 +1,6 @@
 package com.amazon.testlistener;
 
 import com.amazon.base.classes.AbstractTest;
-import com.amazon.base.classes.BrowserDriverFactory;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,8 +11,9 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class ScreenshotMaker extends AbstractTest {
+
     protected void makeScreenshot(){
-        File screenCapture = ((TakesScreenshot) BrowserDriverFactory.getDriver()).getScreenshotAs(OutputType.FILE);
+        File screenCapture = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(screenCapture, new File(
                     ".//target/screenshots/"
@@ -24,7 +24,7 @@ public class ScreenshotMaker extends AbstractTest {
         }
     }
 
-    private String getCurrentTimeAsString(){
+    private static String getCurrentTimeAsString(){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern( "uuuu-MM-dd_HH-mm-ss" );
         return ZonedDateTime.now().format(formatter);
     }
