@@ -1,4 +1,4 @@
-package com.amazon.browserfactory;
+package com.amazon.browser.factory;
 
 public class DriverManagerFactory {
     public static DriverManager getManager(String browser){
@@ -7,7 +7,7 @@ public class DriverManagerFactory {
         switch (browser){
             case "chrome" -> driverManager = new ChromeDriverManager();
             case "safari" -> driverManager = new SafariDriverManager();
-            default -> driverManager = new ChromeDriverManager();
+            default -> throw new IllegalStateException("Unexpected value: " + browser);
         }
         return driverManager;
     }

@@ -1,6 +1,6 @@
 package com.amazon.tests.login;
 
-import com.amazon.base.classes.AbstractTest;
+import com.amazon.base.classes.BaseTest;
 import com.amazon.data.provider.CsvDataProvider;
 import com.amazon.pages.MainPage;
 import com.amazon.testlistener.TestListener;
@@ -12,7 +12,7 @@ import java.util.Map;
 
 
 @Listeners({TestListener.class})
-public class PositiveLoginTests extends AbstractTest {
+public class PositiveLoginTests extends BaseTest {
 
     @Test(dataProvider = "csvReader", dataProviderClass = CsvDataProvider.class)
     public void positiveLoginTest(Map<String,String> testData){

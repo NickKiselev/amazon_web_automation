@@ -1,6 +1,6 @@
 package com.amazon.tests.searchbox;
 
-import com.amazon.base.classes.AbstractTest;
+import com.amazon.base.classes.BaseTest;
 import com.amazon.data.provider.CsvDataProvider;
 import com.amazon.pages.MainPage;
 import org.testng.Assert;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.Map;
 
-public class PositiveSearchBoxTests extends AbstractTest {
+public class PositiveSearchBoxTests extends BaseTest {
 
     @Test(dataProvider = "csvReader", dataProviderClass = CsvDataProvider.class)
     public void positiveSearchBoxTest(Map<String,String> testData){

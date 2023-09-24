@@ -1,7 +1,7 @@
 package com.amazon.base.classes;
 
-import com.amazon.browserfactory.DriverManager;
-import com.amazon.browserfactory.DriverManagerFactory;
+import com.amazon.browser.factory.DriverManager;
+import com.amazon.browser.factory.DriverManagerFactory;
 import com.amazon.testlistener.TestListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,7 +11,7 @@ import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
 @Listeners({TestListener.class})
-public class AbstractTest {
+public class BaseTest {
     protected Logger logger;
     protected String testSuiteName;
     protected String testName;

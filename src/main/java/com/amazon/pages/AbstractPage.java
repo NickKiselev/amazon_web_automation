@@ -56,7 +56,7 @@ public class AbstractPage {
 
     private WebElement waiterFunction(WebElement element){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return wait.until(ExpectedConditions.elementToBeClickable(element));
+        return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
 

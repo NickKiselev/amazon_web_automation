@@ -48,4 +48,13 @@ public class SearchResultsPage extends AbstractPage{
         return getText(outlineNoResults) + " " + getText(outlineInvalidText);
     }
 
+    public String getProductTitleText(){
+        return getText(productTitle);
+    }
+
+    public ProductDetailPage openProductPage(){
+        click(productTitle);
+        return new ProductDetailPage(driver);
+    }
+
 }

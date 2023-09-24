@@ -1,4 +1,4 @@
-package com.amazon.browserfactory;
+package com.amazon.browser.factory;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
