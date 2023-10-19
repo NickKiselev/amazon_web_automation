@@ -8,17 +8,19 @@ import com.amazon.pages.SearchResultsPage;
 import com.amazon.testlistener.TestListener;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
 @Listeners({TestListener.class})
 public class AddProductToCartTest extends BaseTest {
-
+    @Parameters("query")
     @Test
-    public void addProductToCartTest(){
+    public void addProductToCartTest(String searchQuery){
         MainPage mainPage = new MainPage(driver);
         mainPage.openPage();
-        mainPage.enterSearchQuery("iphone");
+        mainPage.enterSearchQuery(searchQuery);
+
         SearchResultsPage searchResultsPage = mainPage.launchSearch();
 
         String productTitle = searchResultsPage.getProductTitleText();

@@ -1,0 +1,16 @@
+com/amazon/browser/factory/DriverManager.class
+com/amazon/base/classes/BaseTest.class
+com/amazon/data/provider/CsvConverter.class
+com/amazon/pages/SignInPage.class
+com/amazon/browser/factory/DriverManagerFactory.class
+com/amazon/testlistener/ScreenshotMaker.class
+com/amazon/browser/factory/SafariDriverManager.class
+com/amazon/data/provider/CsvDataProvider.class
+com/amazon/pages/YourAccountPage.class
+com/amazon/pages/ProductDetailPage.class
+com/amazon/pages/AbstractPage.class
+com/amazon/pages/CartPage.class
+com/amazon/pages/SearchResultsPage.class
+com/amazon/pages/MainPage.class
+com/amazon/browser/factory/ChromeDriverManager.class
+com/amazon/testlistener/TestListener.class

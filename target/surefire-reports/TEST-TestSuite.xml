@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="92.766" tests="20" errors="0" skipped="0" failures="9">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="webdriver.chrome.driver" value="src/main/resources/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/Mikalai_Kisialiou/Documents/Amazon_automation/target/test-classes:/Users/Mikalai_Kisialiou/Documents/Amazon_automation/target/classes:/Users/Mikalai_Kisialiou/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-csv/1.1/commons-csv-1.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/opencsv/opencsv/5.7.1/opencsv-5.7.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BY"/>
+    <property name="sun.boot.library.path" value="/Users/Mikalai_Kisialiou/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/Mikalai_Kisialiou/Documents/Amazon_automation/target/surefire/surefirebooter-20231019193242684_3.jar /Users/Mikalai_Kisialiou/Documents/Amazon_automation/target/surefire 2023-10-19T19-32-42_572-jvmRun1 surefire-20231019193242684_1tmp surefire_0-20231019193242684_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/Mikalai_Kisialiou/Documents/Amazon_automation/target/test-classes:/Users/Mikalai_Kisialiou/Documents/Amazon_automation/target/classes:/Users/Mikalai_Kisialiou/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/Mikalai_Kisialiou/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-csv/1.1/commons-csv-1.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/com/opencsv/opencsv/5.7.1/opencsv-5.7.1.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/Mikalai_Kisialiou/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/Mikalai_Kisialiou"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="/Users/Mikalai_Kisialiou/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/Mikalai_Kisialiou/Documents/Amazon_automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/Mikalai_Kisialiou/Documents/Amazon_automation/target/surefire/surefirebooter-20231019193242684_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.2+9-78"/>
+    <property name="user.name" value="Mikalai_Kisialiou"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/Mikalai_Kisialiou/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/16/mxx8xrfj625_4l7vl80yml0w0000gp/T/"/>
+    <property name="java.version" value="20.0.2"/>
+    <property name="user.dir" value="/Users/Mikalai_Kisialiou/Documents/Amazon_automation"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Mikalai_Kisialiou/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.2+9-78"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="negativeLoginTest[{error=We cannot find an account with that email address, username=min9897mail.ru}](1)" classname="com.amazon.tests.login.NegativeLoginTests" time="10.749">
+    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=118.0.5993.88)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, clickElement {id=D5FB17643E089B2CE64A93A02BB8FF89_element_35}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -&gt; xpath: //span[@id=&apos;nav-link-accountList-nav-line-1&apos;]]&#10;Session ID: 5f6abdbd2a741b72497fad93fa44aaf8" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, clickElement {id=D5FB17643E089B2CE64A93A02BB8FF89_element_35}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -> xpath: //span[@id='nav-link-accountList-nav-line-1']]
+Session ID: 5f6abdbd2a741b72497fad93fa44aaf8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at com.amazon.pages.AbstractPage.click(AbstractPage.java:27)
+	at com.amazon.pages.MainPage.openSignInPage(MainPage.java:43)
+	at com.amazon.tests.login.NegativeLoginTests.negativeLoginTest(NegativeLoginTests.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-1] 19:32:43,879 DEBUG [InternalThreadLocalMap] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[TestNG-tests-1] 19:32:43,882 DEBUG [InternalThreadLocalMap] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[TestNG-tests-2] 19:32:43,970 INFO  [Negative_Login_Test] SUITE Negative_Login_Test STARTED
+[TestNG-tests-2] 19:32:43,971 INFO  [Negative_Login_Test] Starting test with browser: chrome
+[TestNG-tests-1] 19:32:44,010 DEBUG [JdkSslContext] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[TestNG-tests-1] 19:32:44,011 DEBUG [JdkSslContext] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[TestNG-tests-1] 19:32:44,018 DEBUG [GlobalEventExecutor] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[TestNG-tests-1] 19:32:44,027 DEBUG [MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 16
+[TestNG-tests-1] 19:32:44,033 DEBUG [NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[TestNG-tests-1] 19:32:44,033 DEBUG [NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[TestNG-tests-1] 19:32:44,038 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@717aabb
+[TestNG-tests-1] 19:32:44,038 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@74e7779f
+[TestNG-tests-1] 19:32:44,039 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@30b34823
+[TestNG-tests-1] 19:32:44,039 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@d160087
+[TestNG-tests-1] 19:32:44,039 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@4bd08b57
+[TestNG-tests-1] 19:32:44,039 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@4c4463d
+[TestNG-tests-1] 19:32:44,039 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@2e1cf4d6
+[TestNG-tests-1] 19:32:44,039 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@1333cbaa
+[TestNG-tests-1] 19:32:44,040 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@5cf660a8
+[TestNG-tests-1] 19:32:44,040 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@7aa520a5
+[TestNG-tests-1] 19:32:44,040 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3356d163
+[TestNG-tests-1] 19:32:44,040 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3e352238
+[TestNG-tests-1] 19:32:44,040 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@51a9f676
+[TestNG-tests-1] 19:32:44,040 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@25a54ee
+[TestNG-tests-1] 19:32:44,040 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@702400f
+[TestNG-tests-1] 19:32:44,041 TRACE [NioEventLoop] instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@10b19635
+[TestNG-tests-1] 19:32:44,054 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.numHeapArenas: 16
+[TestNG-tests-1] 19:32:44,054 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.numDirectArenas: 16
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.pageSize: 8192
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxOrder: 9
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.chunkSize: 4194304
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.smallCacheSize: 256
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.normalCacheSize: 64
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimInterval: 8192
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.useCacheForAllThreads: false
+[TestNG-tests-1] 19:32:44,055 DEBUG [PooledByteBufAllocator] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[TestNG-tests-1] 19:32:44,070 DEBUG [ByteBufUtil] -Dio.netty.allocator.type: pooled
+[TestNG-tests-1] 19:32:44,070 DEBUG [ByteBufUtil] -Dio.netty.threadLocalDirectBufferSize: 0
+[TestNG-tests-1] 19:32:44,071 DEBUG [ByteBufUtil] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[Forwarding newSession on session null to remote] 19:32:44,323 DEBUG [DefaultChannelId] -Dio.netty.processId: 63213 (auto-detected)
+[Forwarding newSession on session null to remote] 19:32:44,325 DEBUG [NetUtil] -Djava.net.preferIPv4Stack: false
+[Forwarding newSession on session null to remote] 19:32:44,325 DEBUG [NetUtil] -Djava.net.preferIPv6Addresses: false
+[Forwarding newSession on session null to remote] 19:32:44,330 DEBUG [NetUtilInitializations] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+[Forwarding newSession on session null to remote] 19:32:44,331 DEBUG [NetUtil] Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+[Forwarding newSession on session null to remote] 19:32:44,333 DEBUG [DefaultChannelId] -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+[AsyncHttpClient-1-2] 19:32:44,368 DEBUG [AbstractByteBuf] -Dio.netty.buffer.checkAccessible: true
+[AsyncHttpClient-1-2] 19:32:44,369 DEBUG [AbstractByteBuf] -Dio.netty.buffer.checkBounds: true
+[AsyncHttpClient-1-2] 19:32:44,369 DEBUG [ResourceLeakDetectorFactory] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5498ed30
+[AsyncHttpClient-1-3] 19:32:44,385 DEBUG [Recycler] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[AsyncHttpClient-1-3] 19:32:44,385 DEBUG [Recycler] -Dio.netty.recycler.ratio: 8
+[AsyncHttpClient-1-3] 19:32:44,385 DEBUG [Recycler] -Dio.netty.recycler.chunkSize: 32
+[AsyncHttpClient-1-3] 19:32:44,386 DEBUG [Recycler] -Dio.netty.recycler.blocking: false
+[AsyncHttpClient-1-3] 19:32:44,386 DEBUG [Recycler] -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[AsyncHttpClient-1-2] 19:32:46,293 DEBUG [Brotli] brotli4j not in the classpath; Brotli support will be unavailable.
+[TestNG-tests-1] 19:32:46,375 DEBUG [ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xe6fe7e3a7fb4ca17
+[TestNG-tests-1] 19:32:46,885 INFO  [Positive_Login_Test] Starting positiveLoginTest
+[TestNG-tests-1] 19:32:46,889 INFO  [Positive_Login_Test] LOGIN: nickkiselev762@gmail.com
+[TestNG-tests-1] 19:32:46,889 INFO  [Positive_Login_Test] PASSWORD Minato9898
+[TestNG-tests-2] 19:32:47,025 INFO  [Negative_Login_Test] Starting negativeLoginTest
+[TestNG-tests-2] 19:32:47,026 INFO  [Negative_Login_Test] LOGIN: min9897mail.ru
+[TestNG-tests-2] 19:32:47,026 INFO  [Negative_Login_Test] ERROR MESSAGE We cannot find an account with that email address
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChSromteaDrtriinvge rC hr1o1meD8ri.ve0r. 519198.0.359.[971306 .(97e0 (e5775326f73634f.13306b9]1[bW4ddAfRa2Nd6fI43N9aG3c]fd:3d0cb399a1b5b740d4d73fba8d66-4r9eafsc/db[r1a6n9c77h3-6h7e6a4.13d7]s[/W5A9R9N3IN@ GdF]rco3:m9S aoFbcr5ko7Am0dS4do7cr3 kbfA8ad6id-lrre efdfa sio/lbner dan eontnm canshek-t
+mhaseka
+ds/59{93#1@2{1#61}2)1 6o}n)  opno rpto 2r6t 127513
+O4n1
+ly Olnolcya ll occoanl nceocntnieocnst iaornes  aalrel oalwleodw.e
+dP.
+Plleeasaese s seee hett psh:t/t/pchsr:o/m/ecdhrriovmeer.chrdomriuimv.eorg/rsec.churroimtiyu-mc.oorngs/isdeecurraittiyo-ncso nfsoird esruagtigoenstsi onfs oorn  skugegeepstiinogns  Cohn rkeoempeiDnrigv eCrh rsoafmee.
+DChrormeDriivveer rwas  stasrtaed fseuc.c
+essfCulhlyr.o
+meDriver was started successfully.
+Oct 19, 2023 7:32:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 118
+Oct 19, 2023 7:32:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Oct 19, 2023 7:32:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 118
+Oct 19, 2023 7:32:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="negativeLoginTest[{error=We cannot find an account with that email address, username=min9897@mail}](2)" classname="com.amazon.tests.login.NegativeLoginTests" time="0.976">
+    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=118.0.5993.88)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=3EA5B08AC81FA26E5250A970400E0047_element_62}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -&gt; xpath: //span[@id=&apos;nav-link-accountList-nav-line-1&apos;]]&#10;Session ID: 5f6abdbd2a741b72497fad93fa44aaf8" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=3EA5B08AC81FA26E5250A970400E0047_element_62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -> xpath: //span[@id='nav-link-accountList-nav-line-1']]
+Session ID: 5f6abdbd2a741b72497fad93fa44aaf8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.amazon.pages.AbstractPage.waiterFunction(AbstractPage.java:61)
+	at com.amazon.pages.AbstractPage.click(AbstractPage.java:27)
+	at com.amazon.pages.MainPage.openSignInPage(MainPage.java:43)
+	at com.amazon.tests.login.NegativeLoginTests.negativeLoginTest(NegativeLoginTests.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-1] 19:32:58,776 INFO  [Positive_Login_Test] Starting positiveLoginTest
+[TestNG-tests-1] 19:32:58,777 INFO  [Positive_Login_Test] LOGIN: 797888612
+[TestNG-tests-1] 19:32:58,777 INFO  [Positive_Login_Test] PASSWORD Minato9898
+]]></system-out>
+  </testcase>
+  <testcase name="negativeLoginTest[{error=We cannot find an account with that mobile number, username=797867123}](3)" classname="com.amazon.tests.login.NegativeLoginTests" time="1.14">
+    <failure message="invalid session id&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=EC2E51E7E2437AC10E7A119EC55B2CF9_element_98}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -&gt; xpath: //span[@id=&apos;nav-link-accountList-nav-line-1&apos;]]&#10;Session ID: 5f6abdbd2a741b72497fad93fa44aaf8" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=EC2E51E7E2437AC10E7A119EC55B2CF9_element_98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -> xpath: //span[@id='nav-link-accountList-nav-line-1']]
+Session ID: 5f6abdbd2a741b72497fad93fa44aaf8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.amazon.pages.AbstractPage.waiterFunction(AbstractPage.java:61)
+	at com.amazon.pages.AbstractPage.click(AbstractPage.java:27)
+	at com.amazon.pages.MainPage.openSignInPage(MainPage.java:43)
+	at com.amazon.tests.login.NegativeLoginTests.negativeLoginTest(NegativeLoginTests.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-1] 19:33:00,767 INFO  [Positive_Login_Test] Driver closed...
+[AsyncHttpClient-1-7] 19:33:00,769 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26
+]]></system-out>
+  </testcase>
+  <testcase name="negativePasswordTest[{error=Your password is incorrect, password=_@#$#%#^#^#, username=min9897@mail.ru}](1)" classname="com.amazon.tests.login.NegativeLoginTests" time="0.007">
+    <failure message="The driver server has unexpectedly died!&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, get {url=https://www.amazon.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5f6abdbd2a741b72497fad93fa44aaf8" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+The driver server has unexpectedly died!
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6abdbd2a741b72497fad93fa44aaf8
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at com.amazon.pages.AbstractPage.openURL(AbstractPage.java:23)
+	at com.amazon.pages.MainPage.openPage(MainPage.java:38)
+	at com.amazon.tests.login.NegativeLoginTests.negativePasswordTest(NegativeLoginTests.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-2] 19:33:00,940 INFO  [Negative_Login_Test] Starting negativePasswordTest
+[TestNG-tests-2] 19:33:00,940 INFO  [Negative_Login_Test] LOGIN: min9897@mail.ru
+[TestNG-tests-2] 19:33:00,940 INFO  [Negative_Login_Test] PASSWORD: _@#$#%#^#^#
+[TestNG-tests-2] 19:33:00,940 INFO  [Negative_Login_Test] ERROR MESSAGE Your password is incorrect
+]]></system-out>
+  </testcase>
+  <testcase name="negativePasswordTest[{error=Your password is incorrect, password= , username=797888612}](2)" classname="com.amazon.tests.login.NegativeLoginTests" time="0.008">
+    <failure message="The driver server has unexpectedly died!&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, get {url=https://www.amazon.com}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5f6abdbd2a741b72497fad93fa44aaf8" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+The driver server has unexpectedly died!
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, get {url=https://www.amazon.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f6abdbd2a741b72497fad93fa44aaf8
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at com.amazon.pages.AbstractPage.openURL(AbstractPage.java:23)
+	at com.amazon.pages.MainPage.openPage(MainPage.java:38)
+	at com.amazon.tests.login.NegativeLoginTests.negativePasswordTest(NegativeLoginTests.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-2] 19:33:00,948 INFO  [Negative_Login_Test] Starting negativePasswordTest
+[TestNG-tests-2] 19:33:00,949 INFO  [Negative_Login_Test] LOGIN: 797888612
+[TestNG-tests-2] 19:33:00,949 INFO  [Negative_Login_Test] PASSWORD:  
+[TestNG-tests-2] 19:33:00,949 INFO  [Negative_Login_Test] ERROR MESSAGE Your password is incorrect
+]]></system-out>
+  </testcase>
+  <testcase name="closeDriver" classname="com.amazon.tests.login.NegativeLoginTests" time="0.031">
+    <failure message="Timed out waiting for driver server to stop.&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, quit {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to stop.
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279)
+	at com.amazon.browser.factory.DriverManager.closeDriver(DriverManager.java:19)
+	at com.amazon.base.classes.BaseTest.closeDriver(BaseTest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.afterRun(TestRunner.java:877)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:144)
+	... 24 more
+Caused by: org.openqa.selenium.WebDriverException: The driver server has unexpectedly died!
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:130)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:121)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:26171
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:673)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-2] 19:33:00,957 INFO  [Negative_Login_Test] Driver closed...
+[TestNG-tests-1] 19:33:00,980 INFO  [Positive_Login_Test] ALL Positive_Login_Test FINISHED
+]]></system-out>
+  </testcase>
+  <testcase name="positiveLoginTest[{profile_name=Hello, Mika, password=Minato9898, username=nickkiselev762@gmail.com}](1)" classname="com.amazon.tests.login.PositiveLoginTests" time="0.994">
+    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=118.0.5993.88)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=2F9FA364C192C06D3BE3A8E2C46B8D4E_element_42}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -&gt; xpath: //input[@id=&apos;ap_email&apos;]]&#10;Session ID: 5f6abdbd2a741b72497fad93fa44aaf8" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=2F9FA364C192C06D3BE3A8E2C46B8D4E_element_42}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -> xpath: //input[@id='ap_email']]
+Session ID: 5f6abdbd2a741b72497fad93fa44aaf8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.amazon.pages.AbstractPage.waiterFunction(AbstractPage.java:61)
+	at com.amazon.pages.AbstractPage.typeText(AbstractPage.java:31)
+	at com.amazon.pages.SignInPage.enterLogin(SignInPage.java:29)
+	at com.amazon.tests.login.PositiveLoginTests.positiveLoginTest(PositiveLoginTests.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-2] 19:32:57,773 INFO  [Negative_Login_Test] Starting negativeLoginTest
+[TestNG-tests-2] 19:32:57,773 INFO  [Negative_Login_Test] LOGIN: min9897@mail
+[TestNG-tests-2] 19:32:57,774 INFO  [Negative_Login_Test] ERROR MESSAGE We cannot find an account with that email address
+]]></system-out>
+  </testcase>
+  <testcase name="positiveLoginTest[{profile_name=Hello, Nick, password=Minato9898, username=797888612}](2)" classname="com.amazon.tests.login.PositiveLoginTests" time="0.967">
+    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=118.0.5993.88)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;20.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=4E3A06BCCCD10083C369611543603DFC_element_80}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -&gt; xpath: //span[@id=&apos;nav-link-accountList-nav-line-1&apos;]]&#10;Session ID: 5f6abdbd2a741b72497fad93fa44aaf8" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5f6abdbd2a741b72497fad93fa44aaf8, isElementDisplayed {id=4E3A06BCCCD10083C369611543603DFC_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/16/mxx8xrfj625...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50562/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (5f6abdbd2a741b72497fad93fa44aaf8)] -> xpath: //span[@id='nav-link-accountList-nav-line-1']]
+Session ID: 5f6abdbd2a741b72497fad93fa44aaf8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.amazon.pages.AbstractPage.waiterFunction(AbstractPage.java:61)
+	at com.amazon.pages.AbstractPage.click(AbstractPage.java:27)
+	at com.amazon.pages.MainPage.openSignInPage(MainPage.java:43)
+	at com.amazon.tests.login.PositiveLoginTests.positiveLoginTest(PositiveLoginTests.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+]]></failure>
+    <system-out><![CDATA[[TestNG-tests-2] 19:32:59,787 INFO  [Negative_Login_Test] Starting negativeLoginTest
+[TestNG-tests-2] 19:32:59,788 INFO  [Negative_Login_Test] LOGIN: 797867123
+[TestNG-tests-2] 19:32:59,788 INFO  [Negative_Login_Test] ERROR MESSAGE We cannot find an account with that mobile number
+]]></system-out>
+  </testcase>
+  <testcase name="addProductToCartTest[iphone](1)" classname="com.amazon.tests.addtocart.AddProductToCartTest" time="17.248">
+    <system-out><![CDATA[[TestNG-tests-2] 19:33:00,981 INFO  [Negative_Login_Test] ALL Negative_Login_Test FINISHED
+[main] 19:33:01,140 INFO  [Add_Product_To_Cart_Test] SUITE Add_Product_To_Cart_Test STARTED
+[main] 19:33:01,141 INFO  [Add_Product_To_Cart_Test] Starting test with browser: chrome
+[main] 19:33:02,876 INFO  [Add_Product_To_Cart_Test] Starting addProductToCartTest
+[main] 19:33:20,124 INFO  [Add_Product_To_Cart_Test] Test addProductToCartTest passed
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 47518
+Only local connections are allowed.
+Please see https://chromedr[1697736781.168][WARiver.chromium.org/security-considerations for suggestioNINGn]: s Foron mkSeoecpkiAndgd rC hfariolmeedD roinv enre tsmaafes.
+k
+ChromeDriver was started successfully.
+Oct 19, 2023 7:33:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 118
+Oct 19, 2023 7:33:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="positiveSearchBoxTest[{key_word_1=apple, query=macbook, key_word_2=macbook}](1)" classname="com.amazon.tests.searchbox.PositiveSearchBoxTests" time="10.084">
+    <system-out><![CDATA[[main] 19:33:20,125 INFO  [Add_Product_To_Cart_Test] Driver closed...
+[AsyncHttpClient-1-17] 19:33:20,125 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26
+[main] 19:33:20,642 INFO  [Add_Product_To_Cart_Test] ALL Add_Product_To_Cart_Test FINISHED
+[main] 19:33:20,648 INFO  [Positive_Search_Test] SUITE Positive_Search_Test STARTED
+[main] 19:33:20,649 INFO  [Positive_Search_Test] Starting test with browser: chrome
+[main] 19:33:22,393 INFO  [Positive_Search_Test] Starting positiveSearchBoxTest
+apple AND macbook
+[main] 19:33:32,476 INFO  [Positive_Search_Test] Test positiveSearchBoxTest passed
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 29654
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1697736800.685][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully.
+Oct 19, 2023 7:33:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 118
+Oct 19, 2023 7:33:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="positiveSearchBoxTest[{key_word_1=iphone, query=iphone 12 mini, key_word_2=12 mini}](2)" classname="com.amazon.tests.searchbox.PositiveSearchBoxTests" time="3.398">
+    <system-out><![CDATA[[main] 19:33:32,477 INFO  [Positive_Search_Test] Starting positiveSearchBoxTest
+iphone AND 12 mini
+[main] 19:33:35,875 INFO  [Positive_Search_Test] Test positiveSearchBoxTest passed
+]]></system-out>
+  </testcase>
+  <testcase name="positiveSearchBoxTest[{key_word_1=iphone, query=iphone 12*, key_word_2=12 mini}](3)" classname="com.amazon.tests.searchbox.PositiveSearchBoxTests" time="2.81">
+    <failure message="Search result isn&apos;t correct expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Search result isn't correct expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at com.amazon.tests.searchbox.PositiveSearchBoxTests.positiveSearchBoxTest(PositiveSearchBoxTests.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[[main] 19:33:35,876 INFO  [Positive_Search_Test] Starting positiveSearchBoxTest
+iphone AND 12 mini
+]]></system-out>
+  </testcase>
+  <testcase name="emptyInputIntoSearchBoxTest" classname="com.amazon.tests.searchbox.NegativeSearchBoxTests" time="7.646">
+    <system-out><![CDATA[[main] 19:33:38,687 INFO  [Positive_Search_Test] Driver closed...
+[AsyncHttpClient-1-4] 19:33:38,688 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26
+[main] 19:33:38,931 INFO  [Positive_Search_Test] ALL Positive_Search_Test FINISHED
+[main] 19:33:38,938 INFO  [Negative_Search_Test] SUITE Negative_Search_Test STARTED
+[main] 19:33:38,939 INFO  [Negative_Search_Test] Starting test with browser: chrome
+[main] 19:33:40,549 INFO  [Negative_Search_Test] Starting emptyInputIntoSearchBoxTest
+[main] 19:33:48,195 INFO  [Negative_Search_Test] Test emptyInputIntoSearchBoxTest passed
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 15510
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1697736818.967][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully.
+Oct 19, 2023 7:33:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 118
+Oct 19, 2023 7:33:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="invalidInputIntoSearchBoxTest[{query=invalidsearchquery, output_text=No results for invalidsearchquery}](1)" classname="com.amazon.tests.searchbox.NegativeSearchBoxTests" time="2.42">
+    <system-out><![CDATA[[main] 19:33:48,197 INFO  [Negative_Search_Test] Starting invalidInputIntoSearchBoxTest
+[main] 19:33:50,618 INFO  [Negative_Search_Test] Test invalidInputIntoSearchBoxTest passed
+]]></system-out>
+  </testcase>
+  <testcase name="invalidInputIntoSearchBoxTest[{query=&apos;&apos;&apos;&apos;&apos;;&apos;&apos;;otuyoierutyir, output_text=No results for &apos;&apos;&apos;&apos;&apos;;&apos;&apos;;otuyoierutyir}](2)" classname="com.amazon.tests.searchbox.NegativeSearchBoxTests" time="2.682">
+    <system-out><![CDATA[[main] 19:33:50,618 INFO  [Negative_Search_Test] Starting invalidInputIntoSearchBoxTest
+[main] 19:33:53,302 INFO  [Negative_Search_Test] Test invalidInputIntoSearchBoxTest passed
+]]></system-out>
+  </testcase>
+  <testcase name="invalidInputIntoSearchBoxTest[{query=87347otuyoierutyir 34, output_text=No results for 87347otuyoierutyir 34}](3)" classname="com.amazon.tests.searchbox.NegativeSearchBoxTests" time="2.742">
+    <system-out><![CDATA[[main] 19:33:53,303 INFO  [Negative_Search_Test] Starting invalidInputIntoSearchBoxTest
+[main] 19:33:56,044 INFO  [Negative_Search_Test] Test invalidInputIntoSearchBoxTest passed
+]]></system-out>
+  </testcase>
+  <testcase name="spellingErrorInputIntoSearchBoxTest[{query=iphn 12, output_text=Showing results for iphone 12}](1)" classname="com.amazon.tests.searchbox.NegativeSearchBoxTests" time="2.638">
+    <system-out><![CDATA[[main] 19:33:56,046 INFO  [Negative_Search_Test] Starting spellingErrorInputIntoSearchBoxTest
+[main] 19:33:58,685 INFO  [Negative_Search_Test] Test spellingErrorInputIntoSearchBoxTest passed
+]]></system-out>
+  </testcase>
+  <testcase name="spellingErrorInputIntoSearchBoxTest[{query=pixe7l, output_text=Showing results for pixel 7}](2)" classname="com.amazon.tests.searchbox.NegativeSearchBoxTests" time="3.059">
+    <system-out><![CDATA[[main] 19:33:58,685 INFO  [Negative_Search_Test] Starting spellingErrorInputIntoSearchBoxTest
+[main] 19:34:01,745 INFO  [Negative_Search_Test] Test spellingErrorInputIntoSearchBoxTest passed
+]]></system-out>
+  </testcase>
+  <testcase name="spellingErrorInputIntoSearchBoxTest[{query=phto_camer, output_text=Showing results for photo camera}](3)" classname="com.amazon.tests.searchbox.NegativeSearchBoxTests" time="3.21">
+    <system-out><![CDATA[[main] 19:34:01,745 INFO  [Negative_Search_Test] Starting spellingErrorInputIntoSearchBoxTest
+[main] 19:34:04,955 INFO  [Negative_Search_Test] Test spellingErrorInputIntoSearchBoxTest passed
+]]></system-out>
+  </testcase>
+  <testcase name="yourAccountTest[src/main/resources/TestData/yourAccountTest.csv](1)" classname="com.amazon.tests.youraccount.YourAccountTests" time="8.406">
+    <system-out><![CDATA[[main] 19:34:04,956 INFO  [Negative_Search_Test] Driver closed...
+[AsyncHttpClient-1-7] 19:34:04,956 TRACE [WebSocket08FrameEncoder] Encoding WebSocket Frame opCode=8 length=26
+[main] 19:34:05,230 INFO  [Negative_Search_Test] ALL Negative_Search_Test FINISHED
+[main] 19:34:05,321 INFO  [Your_Account_Test] SUITE Your_Account_Test STARTED
+[main] 19:34:05,321 INFO  [Your_Account_Test] Starting test with browser: chrome
+[main] 19:34:07,102 INFO  [Your_Account_Test] Starting yourAccountTest
+[main] 19:34:15,509 INFO  [Your_Account_Test] Test yourAccountTest passed
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 44890
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1697736845.345][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully.
+Oct 19, 2023 7:34:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 118
+Oct 19, 2023 7:34:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SearchBoxTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Positive_Search_Test(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.amazon.tests.searchbox.PositiveSearchBoxTests">
+        <methods>
+          <include name="positiveSearchBoxTest" invocation-numbers="2"/>
+          <include name="closeDriver"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.amazon.tests.searchbox.PositiveSearchBoxTests -->
+    </classes>
+  </test> <!-- Positive_Search_Test(failed) -->
+</suite> <!-- Failed suite [SearchBoxTestSuite] -->

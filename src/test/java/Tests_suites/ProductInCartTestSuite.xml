@@ -4,6 +4,7 @@
 
     <test name="Add_Product_To_Cart_Test">
         <parameter name="browser" value="chrome"/>
+        <parameter name="query" value="iphone"/>
         <classes>
             <class name="com.amazon.tests.addtocart.AddProductToCartTest"/>
         </classes>

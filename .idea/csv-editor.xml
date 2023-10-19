@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/main/resources/TestData/spellingErrorInputIntoSearchBoxTest.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/main/resources/TestData/yourAccountTest.csv">
           <value>
             <Attribute>

@@ -1,0 +1,16 @@
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/pages/SearchResultsPage.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/browser/factory/ChromeDriverManager.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/pages/AbstractPage.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/pages/MainPage.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/testlistener/TestListener.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/data/provider/CsvDataProvider.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/base/classes/BaseTest.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/browser/factory/DriverManager.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/pages/CartPage.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/testlistener/ScreenshotMaker.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/pages/SignInPage.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/pages/ProductDetailPage.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/browser/factory/DriverManagerFactory.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/data/provider/CsvConverter.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/pages/YourAccountPage.java
+/Users/Mikalai_Kisialiou/Documents/Amazon_automation/src/main/java/com/amazon/browser/factory/SafariDriverManager.java

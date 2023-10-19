@@ -1,0 +1,6 @@
+com/amazon/tests/searchbox/NegativeSearchBoxTests.class
+com/amazon/tests/youraccount/YourAccountTests.class
+com/amazon/tests/login/NegativeLoginTests.class
+com/amazon/tests/searchbox/PositiveSearchBoxTests.class
+com/amazon/tests/addtocart/AddProductToCartTest.class
+com/amazon/tests/login/PositiveLoginTests.class

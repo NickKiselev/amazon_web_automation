@@ -25,13 +25,12 @@ public class BaseTest {
     public void beforeTest(String browser, ITestContext ctx){
         logger = LogManager.getLogger(ctx.getCurrentXmlTest().getName());
         logger.info("Starting test with browser: " + browser);
+
         driverManager = DriverManagerFactory.getManager(browser);
         driver = driverManager.getDriver();
-        driver.manage().window().maximize();
 
         this.testSuiteName = ctx.getSuite().getName();
         this.testName = ctx.getCurrentXmlTest().getName();
-
     }
 
     @BeforeMethod(alwaysRun = true)

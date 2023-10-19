@@ -10,6 +10,7 @@ public abstract class DriverManager {
         if(driver==null){
             createDriver();
         }
+        driver.manage().window().maximize();
         return driver;
     }
 

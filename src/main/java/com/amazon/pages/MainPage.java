@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class MainPage extends AbstractPage{
 
@@ -33,7 +32,6 @@ public class MainPage extends AbstractPage{
 
     public MainPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
     public MainPage openPage(){
@@ -64,7 +62,7 @@ public class MainPage extends AbstractPage{
     }
 
     public MainPage openAccountListMenu(){
-        new Actions(driver).moveToElement(accountListMenu).build().perform();
+        new Actions(driver).moveToElement(waiterFunction(accountListMenu)).build().perform();
         return this;
     }
 

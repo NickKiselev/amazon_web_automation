@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 public class ScreenshotMaker extends BaseTest {
 
     protected void makeScreenshot(){
-        File screenCapture = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File screenCapture = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(screenCapture, new File(
                     ".//target/screenshots/"

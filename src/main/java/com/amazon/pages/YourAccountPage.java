@@ -4,7 +4,6 @@ import com.amazon.data.provider.CsvConverter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 
 import java.util.HashMap;
 import java.util.List;
@@ -20,7 +19,6 @@ public class YourAccountPage extends AbstractPage{
 
     public YourAccountPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver,this);
     }
 
     public YourAccountPage getAllCardsIntoList(){
