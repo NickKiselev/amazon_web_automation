@@ -16,7 +16,6 @@ public class BaseTest {
     protected String testSuiteName;
     protected String testName;
     protected String testMethodName;
-    protected DriverManager driverManager;
 
     protected WebDriver driver;
 
@@ -26,8 +25,7 @@ public class BaseTest {
         logger = LogManager.getLogger(ctx.getCurrentXmlTest().getName());
         logger.info("Starting test with browser: " + browser);
 
-        driverManager = DriverManagerFactory.getManager(browser);
-        driver = driverManager.getDriver();
+        driver = DriverManagerFactory.getManager(browser).getDriver();
 
         this.testSuiteName = ctx.getSuite().getName();
         this.testName = ctx.getCurrentXmlTest().getName();
@@ -41,7 +39,7 @@ public class BaseTest {
     @AfterTest(alwaysRun = true)
     public void closeDriver(){
         logger.info("Driver closed...");
-        driverManager.closeDriver();
+        DriverManager.closeDriver();
     }
 
 
